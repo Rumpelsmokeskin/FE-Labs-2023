@@ -44,6 +44,18 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
+let speedlimit = 60;
+let mySpeed = 40;
+
+if (mySpeed> speedlimit){
+   
+   console.log(`Slow Down! Mom is mad!`);
+
+}else if (mySpeed === speedlimit) {
+   console.log(`Everyone is happy!`);
+}else {
+   console.log(`"Speed up! Dad is mad!`);
+}
 
 
 
@@ -63,7 +75,13 @@ Question 2: Is it time to wake up for work? \n`);
  *         b. Otherwise, print "I can sleep in!" to the console.
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+let alarmSet = true;
+let weekDay = true;
+if (alarmSet && weekDay){
+   console.log(`Sound Alarm! Time for work!`);
+} else{
+   console.log(`I can sleep in!`);
+}
 
 
 /*-------------------------------------------------------*/
@@ -81,7 +99,14 @@ Question 3: Username & Password \n`);
  *	        - otherwise, print "Admin Access Denied"
  * 
  * ↓ YOUR CODE HERE ↓ */
+let username = 'Timmy456';
+let password = '6789';
 
+if ((username == "Tommy123" && password == "12345") || (username == "Timmy456" && password == "6789")){
+   console.log("Admin login Successful");
+}else{
+   console.log("Admin Access Denied");
+}
 
 
 /*-------------------------------------------------------*/
@@ -102,6 +127,32 @@ Question 4: Student Class \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let studentClass;
+let studentGrade = 5;
+
+switch (true) {
+   case studentGrade>0 && studentGrade<=6:
+      studentClass = "Elementary";
+      break;
+   case studentGrade>6 && studentGrade<=8:
+      studentClass = "Middle";
+      break;
+   case studentGrade === 9:
+      studentClass = "Freshman";
+      break;
+   case studentGrade === 10:
+      studentClass = "Sophomore";
+      break;
+   case studentGrade === 11:
+      studentClass = "Junior";
+      break;
+   case studentGrade ===12:
+      studentClass = "Senior";
+      break;
+      default:
+         studentClass = "error";
+}
+console.log(studentClass);
 
 
 /*-------------------------------------------------------*/
@@ -116,7 +167,9 @@ Question 5: Loops! \n`);
  *         Print the iterator if the remainder (% // modulus) is 0 when divisible by 4.
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+for (let i = 10; i >= -10; i--) {
+   console.log(i);
+}
 
 
 /*-------------------------------------------------------*/
@@ -137,7 +190,13 @@ Question 6: Debugging an infinite loop! \n`);
    } 
   */
 
-
+for (let i = 11; i > 10; i++) {
+   if (i === 25) {
+      console.log(i);
+      break;
+   }
+   console.log(i);
+}
 
 
 console.log('-----------Finished------------')
